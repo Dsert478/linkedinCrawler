@@ -5,3 +5,4 @@
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
 1620557165794	Marionette	INFO	Listening on port 60091
 1620557165863	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
