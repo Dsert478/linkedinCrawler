@@ -6,6 +6,9 @@
 # permitindo que você convença o servidor da web de que está vindo
 # de um navegador controlado pelo usuário.
 
+# Tutorial de exemplo
+# https://www.youtube.com/watch?v=90t9WkQbQ2E
+
 import requests
 from bs4 import BeautifulSoup
 """
