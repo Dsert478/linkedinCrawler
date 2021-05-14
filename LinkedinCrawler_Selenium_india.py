@@ -4,14 +4,15 @@ from selenium import webdriver
 class LinkedInScraper:
 
     def __init__(self):
+
         self.job_list = []
         firefox_options = webdriver.FirefoxOptions()
         firefox_options.add_argument("--headless")
         self.firefox = webdriver.Firefox(firefox_options=firefox_options)
 
     def scrape_jobs(self):
-        self.firefox.get("https://www.linkedin.com/")
-        self.firefox.find_element_by_class_name("intent-module__button").click()
+        self.firefox.get("https://www.linkedin.com/jobs/jobs-in-duque-de-caxias-rj?countryRedirected=1&position=1&pageNum=0")
+        self.firefox.find_element_by_class_name("").click()
         jobs = self.firefox.find_element_by_class_name("jobs-search__results-list").find_elements_by_tag_name("li")
         for job in jobs:
             d = job.find_element_by_class_name("result-card__contents")
@@ -31,3 +32,5 @@ class LinkedInScraper:
 
 x = LinkedInScraper()
 x.scrape_jobs()
+
+# /symbol/path
